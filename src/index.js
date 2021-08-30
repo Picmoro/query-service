@@ -31,7 +31,7 @@ app.post('/events', async (req, res) => {
     res.send({});
 })
 
-app.post('/posts', async (req, res) => {
+app.get('/posts', async (req, res) => {
     res.send(posts);
 })
 
