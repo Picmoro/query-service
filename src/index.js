@@ -21,9 +21,9 @@ app.post('/events', async (req, res) => {
         }
         case "CommentCreated":
         {
-            const {id, comment, postId} = data;
+            const {id, content, postId} = data;
             const post = posts[postId];
-            post.comments.push({id,  comment})
+            post.comments.push({id,  content})
             break;
         }
     }
